@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>'The New Normal' Premiere</title>
+    <meta
+      name="description"
+      content="A cover page transition based on Vitalii Burhonskyi's Dribbble shot."
+    />
+    <meta
+      name="keywords"
+      content="page transition, gsap, animation, web design, javascript, demo"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/ehl0ehl.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.scss" />
+    <link rel="stylesheet" type="text/css" href="css/kidnap.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dxb2njt.css">
+
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+    
+  </head>
+  <body class="demo-kidnap">
+    <main>
+      <div class="frame">
+        <div class="frame__title">
+          <h1 class="frame__title-main">FLYNNSTONE</h1>
+          <a aria-label="Back to the article" class="frame__title-back" href="">
+            <span class="oh__inner"></span>
+          </a>
+          <br />
+        </div>
+      </div>
+      <div class="content content--layout">
+        <div class="item">
+          <div class="titleContainer">
+          <h1 class="word word--kidnap">
+            <!-- The below spans have random spacing between them-->
+            <span class="word__inner initHidden s">s</span>
+            <span class="word__inner initHidden o">o</span>
+            <span class="word__inner initHidden c">c</span>
+            <span class="word__inner initHidden i">i</span>
+            <span class="word__inner initHidden a">a</span>
+            <span class="word__inner initHidden l">l</span>
+          </h1>
+          <h1 class="word word--kidnap">
+            <span class="word__inner initHidden a2">a</span>
+            <span class="word__inner initHidden n">n</span>
+            <span class="word__inner initHidden x">x</span>
+            <span class="word__inner initHidden i2">i</span>
+            <span class="word__inner initHidden e">e</span>
+            <span class="word__inner initHidden t">t</span>
+            <span class="word__inner initHidden y">y</span>
+          </h1>
+          
+          <!-- <h2
+            class="word word--kidnap"
+            data-image-death="img/death.svg"
+            data-images-char-1="img/r1.png,img/r2.png,img/r3.png"
+            data-images-char-2="img/a1.png,img/a2.png,img/a3.png"
+            data-images-char-3="img/n1.png,img/n2.png,img/n3.png"
+            data-images-char-4="img/s1.png,img/s2.png,img/s3.png"
+            data-images-char-5="img/o1.png,img/o2.png,img/o3.png"
+            data-images-char-6="img/m1.png,img/m2.png,img/m3.png"
+            data-background-colors="#f5a4bf,#336ff0,#ffea9e,#33beff,#a5d613,#f89a53"
+          >
+            anxiety
+          </h2> -->
+          <a class="item__link">you're invited :)</a>
+        </div>
+        </div>
+      </div>
+      <div class="overlay">
+        <div class="overlay__row"></div>
+        <div class="overlay__row"></div>
+      </div>
+      <section class="previews">
+        <div class="preview">
+          <div class="preview__img">
+            <div
+              class="preview__img-inner" id="js-image"
+              style="background-image: url(img/1_big.jpg)"
+            >
+            
+          
+            </div>
+           
+          </div>
+          <h2 class="preview__title oh">
+            <span class="oh__inner">The</span>
+            <span class="oh__inner">New Normal</span>
+          </h2>
+          <div class="preview__column preview__column--start">
+            <span class="oh"><span class="oh__inner">2022</span></span>
+            <p class="longerText">
+              I made this film as a result of lots of conversations I've had
+              around the lingering effects of the pandemic in regards to our
+              mental health and social tendencies, particularly among the
+              younger generations. I hope this film can increase understandings
+              as well as spark more conversation about what we are each
+              experiencing.
+            </p>
+          </div>
+          <div class="preview__column">
+            <h3 class="preview__column-title oh">
+              <!-- <span class="oh__inner">About</span>
+            </h3>
+            <span class="preview__column-title preview__column-title--main oh"
+              ><span class="oh__inner">Short Documentary</span></span
+            >
+            <span class="oh"><span class="oh__inner">2022</span></span> -->
+          </div>
+          <div class="preview__column">
+            <h3 class="preview__column-title oh">
+              <span class=" ongerText oh__inner">Premieres</span>
+            </h3>
+            <p>November 28th, 8:00pm Cornerstone Center for the arts</p>
+            <a
+              href="https://tympanus.net/Development/MakeWayGridEffect/"
+              class="frame__title-prev"
+              >RSVP
+            </a>
+          </div>
+
+          <button class="unbutton preview__back">
+            <svg width="100px" height="18px" viewBox="0 0 50 9">
+              
+            </svg>
+          </button>
+          
+        </div>
+        
+      </section>
+    </main>
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="module" src="js/charming.min.js"></script>
+    <script type="module" src="js/demo.js"></script>
+    <script type="module" src="js/demo2.js"></script>
+    <script type="module" src="js/imagesloaded.pkgd.min.js"></script>
+		<script type="module" src="js/demo.js"></script>
+    <script>
+      var $cursor = $('.cursor');
+
+      function moveCursor(e) {
+        $cursor.addClass('is-moving');
+        
+        TweenLite.to($cursor, 0.23, {
+          left: e.pageX,
+          top: e.pageY,
+          ease: Power4.easOut
+        });
+        
+        clearTimeout(timer);
+
+        var timer = setTimeout(function() {
+            $cursor.removeClass('is-moving');
+        }, 300);
+      }
+
+      $(window).on('mousemove', moveCursor);
+    </script>
+    <!-- <div class="cursor"></div> -->
+  </body>
+</html>

@@ -1,0 +1,123 @@
+/* New font face from img/avocadoBold.ttf */
+@font-face {
+  font-family: avocadoBold;
+  src: url(../img/avocadoBold.ttf);
+}
+
+.word--kidnap {
+  font-family: avocadoBold, sans-serif;
+  text-transform: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 9vw;
+  color: black;
+}
+
+.word--kidnap span {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+
+@keyframes hover {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.initHidden {
+  animation-name: hover;
+  animation-duration: 1ms;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+.initHidden:active,
+.initHidden:focus,
+.initHidden:hover {
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.a2 {
+  letter-spacing: -1rem;
+}
+
+.s {
+  letter-spacing: -1rem;
+}
+
+.o {
+  letter-spacing: -1.5rem;
+}
+
+.c {
+  letter-spacing: 5rem;
+}
+
+.i {
+  letter-spacing: 4rem;
+}
+
+.a {
+  letter-spacing: -0.2rem;
+}
+
+.l {
+}
+/* 
+@keyframes hovera2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.a2 {
+  animation-name: hovera2;
+  animation-duration: 1ms;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+.a2:active,
+.a2:focus,
+.a2:hover {
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+} */
+
+.a2 {
+  letter-spacing: -0.4rem;
+}
+
+.n {
+  letter-spacing: -0.4rem;
+}
+
+.x {
+  letter-spacing: -0.4rem;
+}
+
+.i2 {
+  letter-spacing: -0.4rem;
+}
+
+.e {
+  letter-spacing: -0.4rem;
+}
+
+.t {
+  letter-spacing: -0.4rem;
+}
+
+.y {
+  letter-spacing: -0.4rem;
+}
